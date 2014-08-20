@@ -1,6 +1,26 @@
+<!--suppress ALL -->
 <template name="shareit">
-<div class="share-buttons">
-  <a target="_blank" class="btn btn-facebook fb-share" href="#"><i class="fa fa-facebook"></i> Share on Facebook </a>
-  <a class="btn btn-twitter tw-share" href="#"><i class="fa fa-twitter"></i> Share on Twitter </a>
-</div>
+  {{> UI.contentBlock}}
+</template>
+
+<template name="shareit-bootstrap">
+  <div class="share-buttons">
+    <a target="_blank" class="btn btn-facebook fb-share" id="fb-share" href="#"><i class="fa fa-facebook"></i> Share on Facebook </a>
+    <a class="btn btn-twitter tw-share" href="#" id="tw-share" ><i class="fa fa-twitter"></i> Share on Twitter </a>
+  </div>
+</template>
+
+<template name="shareitSemanticUI">
+  <div class="share-buttons">
+    <a target="_blank" href="#" id="fb-share">
+      <div class="mini ui facebook button">
+        <i class="facebook icon"></i> Share on Facebook
+      </div>
+    </a>
+    <a target="_blank" href="#" id="tw-share">
+      <div class="mini ui twitter button">
+        <i class="twitter icon"></i> Share on Twitter
+      </div>
+    </a>
+  </div>
 </template>
